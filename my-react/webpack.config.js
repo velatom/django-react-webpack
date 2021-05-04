@@ -11,7 +11,8 @@ module.exports = {
     mode: "development", // "production" | "development" | "none"
     context: __dirname,
     entry: {        
-        App: './src/views/App.jsx',
+        // App: './src/views/App.jsx',
+        LinksDetail: './src/views/LinksDetail.jsx',
         vendor: ['react', 'babel-polyfill'],
     },
     output: {        

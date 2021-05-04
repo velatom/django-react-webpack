@@ -2,17 +2,16 @@
 {% load render_bundle from webpack_loader %}
 
 {% block head %}
-   
+    <title>Links Detail</title>
 {% endblock %}
 
 {% block main %}
     <div id="root"></div>
 
-    <!-- <div class="container">
-        <h1>View 1</h1>
-    </div> -->
-
     {% render_bundle 'vendor' 'js' %}
-    {% render_bundle 'App' 'js' %}
+    {% render_bundle 'LinksDetail' 'js' %}
+    <script>
+        window.render_components({links: {{ links|safe }}});
+    </script>
 
 {% endblock %}
