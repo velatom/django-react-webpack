@@ -1,0 +1,17 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+my-react/node_modules
+
+# testing
+/data
+
+# django
+/links/__pycache__
+/links/migrations
+/links/static/links/bundle/*
+/links/static/links/img/*
+/mydjango/__pycache__
+
+# react
+my-react/webpack-stats.base.json
